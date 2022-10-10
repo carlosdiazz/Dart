@@ -24,4 +24,12 @@ void main(List<String> args) {
   print(listaEnteros);
 
   print(listaEnteros.asMap()); // Aqui lo convierto en un Map
+
+  //? Esto es notacion en casacada puedo aplicar varios metodos sin tenerlo que llamar la variable varias veces
+  listaEnteros
+    ..clear()
+    ..add(10)
+    ..addAll([11, 12, 13]);
+
+  print(listaEnteros);
 }
